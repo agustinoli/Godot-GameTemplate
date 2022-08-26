@@ -21,7 +21,10 @@ func add_timeout(node : Node, function : String, timeout : int)->Timer:
 #
 # timer: timer's reference returned from add_timeout()
 func delete_timeout(timer : Timer)->void:
-	timer.stop()
-	remove_child(timer)
-	timer.queue_free()
+	if timer == null:
+		print_debug("GlobalTimer: delete_timeout() called with empty timer")
+	else:
+		timer.stop()
+		remove_child(timer)
+		timer.queue_free()
 
