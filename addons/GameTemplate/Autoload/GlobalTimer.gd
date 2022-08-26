@@ -8,13 +8,23 @@ extends Node2D
 #
 # Returns a reference to the timer
 func add_timeout(node : Node, function : String, timeout : int)->Timer:
-	var timer = Timer.new()
-	timer = Timer.new()
-	timer.set_one_shot(true)
-	timer.set_wait_time(timeout)
-	timer.connect("timeout", node, function)
-	timer.autostart = true
-	add_child(timer)
+	var timer = null
+	
+	if node == null:
+		print_debug("GlobalTimer: add_timeout() called with empty node")
+	elif function == "":
+		print_debug("GlobalTimer: add_timeout() called with empty function's name")
+	elif timeout <= 0:
+		print_debug("GlobalTimer: add_timeout() called with negative timeout")
+	else:
+		timer = Timer.new()
+		timer = Timer.new()
+		timer.set_one_shot(true)
+		timer.set_wait_time(timeout)
+		timer.connect("timeout", node, function)
+		timer.autostart = true
+		add_child(timer)
+	
 	return timer
 
 # Deletes a timeout
