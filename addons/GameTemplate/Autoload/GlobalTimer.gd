@@ -1,6 +1,13 @@
 extends Node2D
 
-func add_timeout(node : Node, function : String, timeout : int)->void:
+# Creates a new timeout by creating a new Timer with the specified parameters
+#
+# node: node that will execute the timeout's function
+# function: name of the timeout's function
+# timeout: timeout's time in seconds
+#
+# Returns a reference to the timer
+func add_timeout(node : Node, function : String, timeout : int)->Timer:
 	var timer = Timer.new()
 	timer = Timer.new()
 	timer.set_one_shot(true)
@@ -8,3 +15,13 @@ func add_timeout(node : Node, function : String, timeout : int)->void:
 	timer.connect("timeout", node, function)
 	timer.autostart = true
 	add_child(timer)
+	return timer
+
+# Deletes a timeout
+#
+# timer: timer's reference returned from add_timeout()
+func delete_timeout(timer : Timer)->void:
+	timer.stop()
+	remove_child(timer)
+	timer.queue_free()
+
