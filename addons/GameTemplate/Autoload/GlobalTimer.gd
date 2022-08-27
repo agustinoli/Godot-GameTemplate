@@ -14,8 +14,8 @@ func add_timeout(node : Node, function : String, timeout : int, autostart : bool
 	var timer = null
 	if node == null:
 		print_debug("GlobalTimer: add_timeout() called with empty node")
-	elif function == "":
-		print_debug("GlobalTimer: add_timeout() called with empty function's name")
+	elif not node.has_method(function):
+		print_debug("GlobalTimer: add_timeout() called with wrong function's name")
 	elif timeout <= 0:
 		print_debug("GlobalTimer: add_timeout() called with negative timeout")
 	else:
