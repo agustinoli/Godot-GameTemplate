@@ -13,3 +13,13 @@ func _on_Button_pressed()->void:
 func _exit_tree()->void:
 	Hud.visible = false
 	PauseMenu.can_show = false
+
+
+func _on_TestGlobalTimer_pressed():
+	PauseMenu.can_show = false
+	Game.emit_signal("ChangeScene", "res://addons/GameTemplate/Tests/GlobalTimerTest.tscn")
+
+
+func _on_TestEnv_pressed():
+	PauseMenu.can_show = false
+	Game.emit_signal("ChangeScene", "res://addons/GameTemplate/Tests/DotEnvTest.tscn")

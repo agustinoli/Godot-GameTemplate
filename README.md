@@ -33,7 +33,6 @@ Template made for [Godot Wild Jam](https://godotwildjam.com/)
 - To enable/disable pause menu levels set: `PauseMenu.can_show = true `
 - Check convinient signals in Game singleton (New Game, Continue, Resume, Restart, ChangeScene, Exit)
 - Localization is possible adding languages and strings to this [CSV file](https://github.com/agustinoli/Godot-GameTemplate)
-- CI/CD pipeline runs on main branch and builds an export for each plataform (Windows, Mac, Linux and HTML5) and then deploys it to an already-made itch.io page. Only needs 3 secrets (ITCH_GAME, ITCH_USER and BUTLER_CREDENTIALS). You need to edit game page so html version is playable online.
 
 ### Singletone roles:
 
@@ -50,3 +49,10 @@ Template made for [Godot Wild Jam](https://godotwildjam.com/)
 - Hud - reserved for game specific overlay (HP, Points, etc.).
 - Music - Persistent AudioStreamPlayer for music.
 - HTMLfocus - if game is HTML5 it will overlay a button on screen, requesting player to click on it and allowing the game to become in focus.
+
+## CI CD
+
+- CI/CD pipeline runs on main branch and builds an export for each plataform (Windows, Mac, Linux and HTML5) and then deploys it to an already-made itch.io page. You need to edit game page so html version is playable online.
+  These secrets are needed for the CICD pipeline to work correctly:
+
+ITCH_GAME, ITCH_USER, BUTLER_CREDENTIALS, SILENTWOLF_API_KEY, SILENTWOLF_GAME_ID
