@@ -24,6 +24,7 @@ MASTER,Master,General
 MUSIC,Music,Música
 SFX,Sounds,Efectos de Sonido
 CONTROLS,Controls,Controles
+CREDITS,Credits,Créditos
 ACTIONS,Actions,Acciones
 KEYBOARD,Keyboard,Teclado
 GAMEPAD,Gamepad,Gamepad
@@ -31,3 +32,8 @@ DEFAULT,Default,Defecto
 USE_NEW_CONTROLS,Use new control!,Usar nuevos controles!
 CANCEL,Cancel,Cancelar
 LANGUAGES,Languages,Idiomas
+BY,"by","por"
+CREDITS1,"Programming","Programación"
+CREDITS2,"Graphic art","Arte gráfica"
+CREDITS3,"Sound effects","Efectos de sonido"
+CREDITS4,"Translates","Traducciones"
