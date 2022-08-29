@@ -35,4 +35,4 @@ func retranslate()->void:
 
 
 func _on_Credits_pressed():
-	Game.emit_signal("ChangeScene", First_Level)
+	Game.emit_signal("ChangeScene", "res://addons/GameTemplate/CreditsScreen/CreditsScreen.tscn")

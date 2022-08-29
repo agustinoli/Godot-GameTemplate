@@ -1,15 +1,18 @@
 extends Node2D
 
 func _ready():
-	$CanvasLayer/Label.text = tr("CREDITS")
-	var more_credits = true
-	var credit_index = 1
-	
-	$CanvasLayer/Label.text = "CREDITS\n"
-	while more_credits:
-		var credit_sr = str("CREDITS", credit_index)
-		if tr(credit_sr) == credit_sr:
-			more_credits = false
-		else:
-			$CanvasLayer/Label.text += str( tr(credit_sr), " ", tr("BY"), "\n" )
-			credit_index += 1
+	var config = ConfigFile.new()
+	var err = config.load("res://config.cfg")
+
+	if err != OK:
+		return
+
+	$CanvasLayer/Label.text = str(tr("CREDITS"), "\n\n")
+	for credit in config.get_section_keys("credits"):
+		print(credit)
+		$CanvasLayer/Label.text += str(tr(credit), " ", tr("BY"), " ", config.get_value("credits", credit), "\n")
+
+
+func _input(event):
+	if event is InputEventKey and event.pressed:
+		Game.emit_signal("ChangeScene", "res://MainMenu/MainMenu.tscn")
