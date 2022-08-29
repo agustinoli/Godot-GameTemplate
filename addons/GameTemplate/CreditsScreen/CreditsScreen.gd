@@ -11,7 +11,6 @@ func _ready():
 
 	$CanvasLayer/Label.text = str(tr("CREDITS"), "\n\n")
 	for credit in config.get_section_keys("credits"):
-		print(credit)
 		$CanvasLayer/Label.text += str(tr(credit), " ", tr("BY"), " ", config.get_value("credits", credit), "\n")
 
 
