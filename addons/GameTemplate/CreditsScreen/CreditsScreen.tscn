@@ -16,6 +16,7 @@ font_data = ExtResource( 2 )
 [node name="CreditsScreen" type="Node2D"]
 position = Vector2( -2, 0 )
 script = ExtResource( 4 )
+Return_Scene = "res://MainMenu/MainMenu.tscn"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

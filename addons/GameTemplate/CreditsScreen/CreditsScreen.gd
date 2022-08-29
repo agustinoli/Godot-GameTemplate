@@ -1,5 +1,7 @@
 extends Node2D
 
+export (String, FILE, "*.tscn") var Return_Scene: String
+
 func _ready():
 	var config = ConfigFile.new()
 	var err = config.load("res://config.cfg")
@@ -15,4 +17,4 @@ func _ready():
 
 func _input(event):
 	if event is InputEventKey and event.pressed:
-		Game.emit_signal("ChangeScene", "res://MainMenu/MainMenu.tscn")
+		Game.emit_signal("ChangeScene", Return_Scene)
