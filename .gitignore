@@ -7,8 +7,8 @@ debug.log
 # Imported translations (automatically generated from CSV files)
 *.translation
 
-#environmental variables
-.env
+#environmental variables, we skip the dot because godot doesn't export those files
+env
 
 # Mono-specific ignores
 .mono/
