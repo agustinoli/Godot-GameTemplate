@@ -20,6 +20,12 @@ jobs:
           envkey_SILENTWOLF_GAME_ID: ${{ secrets.SILENTWOLF_GAME_ID }}
           file_name: env
           fail_on_empty: true
+        
+      - name: Display structure of files
+        run: ls -R
+        
+      - name: Display env file
+        run: cat env
 
       - name: export game
         uses: firebelley/godot-export@v4.1.0
