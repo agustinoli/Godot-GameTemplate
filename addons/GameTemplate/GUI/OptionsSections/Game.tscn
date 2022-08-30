@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/GameTemplate/GUI/OptionsSections/DarkerPanel.tres" type="StyleBox" id=1]
-[ext_resource path="res://addons/GameTemplate/GUI/OptionsSections/Languages.gd" type="Script" id=2]
+[ext_resource path="res://addons/GameTemplate/GUI/OptionsSections/Game.gd" type="Script" id=2]
 [ext_resource path="res://addons/GameTemplate/Assets/Fonts/pixellocale_16.tres" type="DynamicFont" id=3]
 [ext_resource path="res://addons/GameTemplate/GUI/Buttons/DefaultButton.tscn" type="PackedScene" id=6]
 
-[node name="Languages" type="VBoxContainer"]
+[node name="Game" type="VBoxContainer"]
 margin_left = 8.0
 margin_top = 8.0
 margin_right = 312.0
@@ -26,13 +26,13 @@ anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="LanguagesLabel" type="Label" parent="Panel/VBoxContainer"]
+[node name="GameLabel" type="Label" parent="Panel/VBoxContainer"]
 margin_right = 304.0
 margin_bottom = 34.0
 size_flags_horizontal = 5
 size_flags_vertical = 1
 custom_fonts/font = ExtResource( 3 )
-text = "Languages"
+text = "Game"
 align = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer"]
@@ -66,7 +66,7 @@ size_flags_horizontal = 4
 size_flags_vertical = 3
 custom_constants/separation = 1
 
-[node name="Back" parent="MarginContainer/VBoxContainer" groups=["Languages"] instance=ExtResource( 6 )]
+[node name="Back" parent="MarginContainer/VBoxContainer" groups=["Game"] instance=ExtResource( 6 )]
 margin_right = 29.0
 text = "Back"
 
