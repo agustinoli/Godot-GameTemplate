@@ -25,3 +25,13 @@ func on_show_game(value:bool)->void:
 func retranslate()->void:
 	find_node("GameLabel").text = tr("GAME")
 	find_node("Back").text = tr("BACK")
+	find_node("DifficultyLabel").text = tr("DIFFICULTY")
+	find_node("BloodLabel").text = tr("BLOOD")
+	find_node("PacificLabel").text = tr("PACIFIC")
+	
+	var dif_select = find_node("DifficultySelect")
+	dif_select.clear()
+	dif_select.add_item(tr("HARD"))
+	dif_select.add_item(tr("NORMAL"))
+	dif_select.add_item(tr("EASY"))
+
