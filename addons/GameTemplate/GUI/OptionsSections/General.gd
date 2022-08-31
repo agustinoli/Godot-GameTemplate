@@ -107,6 +107,7 @@ func retranslate()->void:
 	find_node("Music").get_node("ScaleName").text 	= tr("MUSIC")
 	find_node("SFX").get_node("ScaleName").text 	= tr("SFX")
 	find_node("LanguagesButton").text 				= tr("LANGUAGES")
+	find_node("GameButton").text	 				= tr("GAME")
 	find_node("Controls").text 						= tr("CONTROLS")
 	find_node("Back").text 							= tr("BACK")
 
