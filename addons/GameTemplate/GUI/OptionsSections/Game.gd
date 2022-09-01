@@ -1,7 +1,5 @@
 extends VBoxContainer
 
-onready var button:PackedScene = preload("res://addons/GameTemplate/GUI/Buttons/DefaultButton.tscn")
-onready var button_parent:HBoxContainer = $"Panel/VBoxContainer/MarginContainer/HBoxContainer"
 
 func _ready()->void:
 	MenuEvent.connect("Game", self, "on_show_game")
