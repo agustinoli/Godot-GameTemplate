@@ -52,7 +52,7 @@ Template made for [Godot Wild Jam](https://godotwildjam.com/)
 
 ## CI CD
 
-- CI/CD pipeline runs on the main branch and builds an export for each platform (Windows, Mac, Linux and HTML5) and then deploys it to an already-made itch.io page. You need to edit the game page so HTML version is playable online.
+- CI/CD pipeline runs on the main branch and builds an export for each platform (Windows, Mac, Linux and HTML5) and then deploys it to an already-made itch.io page. You need to edit the game page so the HTML version is playable online.
   These secrets are needed for the CICD pipeline to work correctly:
 
   | Name               | Description                                     |

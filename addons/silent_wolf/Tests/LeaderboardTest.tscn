@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://addons/silent_wolf/Scores/Leaderboard.tscn" type="PackedScene" id=1]
+[ext_resource path="res://addons/silent_wolf/Tests/LeaderboardTest.gd" type="Script" id=2]
+
+[node name="Node" type="Control"]
+margin_right = -2426.88
+margin_bottom = -1244.52
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+script = ExtResource( 2 )
+
+[node name="Leaderboard" parent="." instance=ExtResource( 1 )]
+position = Vector2( 70, 0 )
+scale = Vector2( 0.1, 0.1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="NewScore" type="Button" parent="VBoxContainer"]
+margin_right = 95.0
+margin_bottom = 20.0
+text = "New"
+
+[node name="ResetScene" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 95.0
+margin_bottom = 44.0
+text = "RestartScene"
+
+[connection signal="pressed" from="VBoxContainer/NewScore" to="." method="_on_NewScore_pressed"]
+[connection signal="pressed" from="VBoxContainer/ResetScene" to="." method="_on_ResetScene_pressed"]

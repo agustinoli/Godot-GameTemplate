@@ -15,7 +15,7 @@ Next_Scene = "res://MainMenu/MainMenu.tscn"
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.662745, 1, 0.537255, 1 )
+color = Color( 0.0980392, 0.105882, 0.0941176, 1 )
 
 [node name="Button" type="Button" parent="CanvasLayer"]
 anchor_left = 0.5
@@ -36,29 +36,41 @@ texture = ExtResource( 3 )
 script = ExtResource( 4 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchor_left = 0.046
+anchor_top = 0.046
+anchor_right = 0.046
+anchor_bottom = 0.046
 margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Tests" type="Label" parent="CanvasLayer/VBoxContainer"]
-margin_right = 70.0
+margin_right = 71.0
 margin_bottom = 14.0
 text = "Tests"
 align = 1
 
 [node name="TestGlobalTimer" type="Button" parent="CanvasLayer/VBoxContainer"]
 margin_top = 18.0
-margin_right = 70.0
+margin_right = 71.0
 margin_bottom = 42.0
 theme = ExtResource( 5 )
 text = "GlobalTimer"
 
 [node name="TestEnv" type="Button" parent="CanvasLayer/VBoxContainer"]
 margin_top = 46.0
-margin_right = 70.0
+margin_right = 71.0
 margin_bottom = 70.0
 theme = ExtResource( 5 )
 text = "Env"
 
+[node name="TestHighScore" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 74.0
+margin_right = 71.0
+margin_bottom = 98.0
+theme = ExtResource( 5 )
+text = "Highscores"
+
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/TestGlobalTimer" to="." method="_on_TestGlobalTimer_pressed"]
 [connection signal="pressed" from="CanvasLayer/VBoxContainer/TestEnv" to="." method="_on_TestEnv_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TestHighScore" to="." method="_on_TestHighScore_pressed"]
