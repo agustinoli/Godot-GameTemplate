@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://addons/GameTemplate/GUI/OptionsSections/DarkerPanel.tres" type="StyleBox" id=1]
 [ext_resource path="res://addons/GameTemplate/GUI/OptionsSections/Game.gd" type="Script" id=2]
 [ext_resource path="res://addons/GameTemplate/Assets/Fonts/pixellocale_16.tres" type="DynamicFont" id=3]
 [ext_resource path="res://addons/GameTemplate/Assets/Fonts/pixellocale_8.tres" type="DynamicFont" id=4]
+[ext_resource path="res://addons/GameTemplate/GUI/Buttons/ToggleButton.tscn" type="PackedScene" id=5]
 [ext_resource path="res://addons/GameTemplate/GUI/Buttons/DefaultButton.tscn" type="PackedScene" id=6]
 
 [node name="Game" type="VBoxContainer"]
@@ -103,26 +104,17 @@ margin_bottom = 5.0
 rect_min_size = Vector2( 0, 5 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer"]
-margin_left = 20.0
+margin_left = 24.0
 margin_top = 9.0
-margin_right = 129.0
+margin_right = 125.0
 margin_bottom = 35.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="BloodLabel" type="Label" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer"]
-margin_right = 81.0
+[node name="Blood" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer" instance=ExtResource( 5 )]
+margin_right = 101.0
 margin_bottom = 26.0
-size_flags_horizontal = 5
-size_flags_vertical = 1
-custom_fonts/font = ExtResource( 3 )
 text = "Blood / Gore"
-align = 1
-
-[node name="BloodCheckBox" type="CheckBox" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer"]
-margin_left = 85.0
-margin_right = 109.0
-margin_bottom = 26.0
 
 [node name="Control" type="Control" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer"]
 margin_top = 39.0
@@ -131,26 +123,17 @@ margin_bottom = 49.0
 rect_min_size = Vector2( 0, 10 )
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer"]
-margin_left = 21.0
+margin_left = 23.0
 margin_top = 53.0
-margin_right = 129.0
+margin_right = 127.0
 margin_bottom = 79.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 
-[node name="PacificLabel" type="Label" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer2"]
-margin_right = 80.0
+[node name="Pacific" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer2" instance=ExtResource( 5 )]
+margin_right = 104.0
 margin_bottom = 26.0
-size_flags_horizontal = 5
-size_flags_vertical = 1
-custom_fonts/font = ExtResource( 3 )
-text = "Pacific mode"
-align = 1
-
-[node name="PacificCheckBox" type="CheckBox" parent="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer2"]
-margin_left = 84.0
-margin_right = 108.0
-margin_bottom = 26.0
+text = "Pacific Mode"
 
 [node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer"]
 margin_top = 34.0
