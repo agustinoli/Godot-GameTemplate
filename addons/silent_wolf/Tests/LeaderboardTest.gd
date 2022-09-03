@@ -17,7 +17,19 @@ func _ready():
 
 
 func _on_NewScore_pressed():
-	SilentWolf.Scores.persist_score("player_name", 12)
+	var player_name
+	if SilentWolf.Auth.logged_in_player != null:
+		player_name = SilentWolf.Auth.logged_in_player
+	else:
+		player_name = "Anonimous player"
+	
+	var score = 420
+	var ldboard_name = "main"
+	var metadata = {
+		"elapsed_time_ms": 231457,
+		"won_boss_fight": true
+	}
+	SilentWolf.Scores.persist_score(player_name, score, ldboard_name, metadata)
 
 func _on_ResetScene_pressed():
 	PauseMenu.can_show = false

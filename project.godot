@@ -82,6 +82,14 @@ window/stretch/aspect="keep_height"
 
 enabled=PoolStringArray( "res://addons/GameTemplate/plugin.cfg", "res://addons/silent_wolf/plugin.cfg" )
 
+[global]
+
+theme=false
+
+[gui]
+
+theme/custom="res://addons/GameTemplate/GUI/default_theme.tres"
+
 [importer_defaults]
 
 texture={

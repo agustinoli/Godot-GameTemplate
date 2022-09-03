@@ -1,4 +1,4 @@
-extends TextureRect
+extends ScrollContainer
 
 const SWLogger = preload("../utils/SWLogger.gd")
 

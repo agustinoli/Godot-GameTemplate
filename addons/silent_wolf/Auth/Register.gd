@@ -1,4 +1,4 @@
-extends TextureRect
+extends ScrollContainer
 
 const SWLogger = preload("../utils/SWLogger.gd")
 
@@ -9,10 +9,9 @@ func _ready():
 	
 func _on_RegisterButton_pressed():
 	var player_name = $"FormContainer/MainFormContainer/FormInputFields/PlayerName".text
-	var email = $"FormContainer/MainFormContainer/FormInputFields/Email".text
 	var password = $"FormContainer/MainFormContainer/FormInputFields/Password".text
 	var confirm_password = $"FormContainer/MainFormContainer/FormInputFields/ConfirmPassword".text
-	SilentWolf.Auth.register_player(player_name, email, password, confirm_password)
+	SilentWolf.Auth.register_player_user_password(player_name, password, confirm_password)
 	show_processing_label()
 	
 func _on_registration_succeeded():
@@ -34,7 +33,7 @@ func _on_registration_failed(error):
 	$"FormContainer/ErrorMessage".show()
 
 func _on_BackButton_pressed():
-	get_tree().change_scene(SilentWolf.auth_config.redirect_to_scene)
+	Game.emit_signal("ChangeScene",SilentWolf.auth_config.redirect_to_scene)
 	
 func show_processing_label():
 	$"FormContainer/ProcessingLabel".show()

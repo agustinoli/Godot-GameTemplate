@@ -1,7 +1,7 @@
 tool
-extends Node2D
+extends Control
 
-const ScoreItem = preload("ScoreItem.tscn")
+const ScoreItem = preload("res://Leaderboard/ScoreItem.tscn")
 const SWLogger = preload("../utils/SWLogger.gd")
 
 var list_index = 0

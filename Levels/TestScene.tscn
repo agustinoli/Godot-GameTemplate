@@ -45,28 +45,28 @@ margin_bottom = 40.0
 
 [node name="Tests" type="Label" parent="CanvasLayer/VBoxContainer"]
 margin_right = 71.0
-margin_bottom = 14.0
+margin_bottom = 18.0
 text = "Tests"
 align = 1
 
 [node name="TestGlobalTimer" type="Button" parent="CanvasLayer/VBoxContainer"]
-margin_top = 18.0
+margin_top = 22.0
 margin_right = 71.0
-margin_bottom = 42.0
+margin_bottom = 46.0
 theme = ExtResource( 5 )
 text = "GlobalTimer"
 
 [node name="TestEnv" type="Button" parent="CanvasLayer/VBoxContainer"]
-margin_top = 46.0
+margin_top = 50.0
 margin_right = 71.0
-margin_bottom = 70.0
+margin_bottom = 74.0
 theme = ExtResource( 5 )
 text = "Env"
 
 [node name="TestHighScore" type="Button" parent="CanvasLayer/VBoxContainer"]
-margin_top = 74.0
+margin_top = 78.0
 margin_right = 71.0
-margin_bottom = 98.0
+margin_bottom = 102.0
 theme = ExtResource( 5 )
 text = "Highscores"
 

@@ -11,6 +11,7 @@ func _ready()->void:
 	#Localization
 	SettingsLanguage.connect("ReTranslate", self, "retranslate")
 	retranslate()
+	$BG/MarginContainer/VBoxMain/HBoxContainer/VBoxContainer/PlayerName.set_text(str(SilentWolf.Auth.logged_in_player))
 
 func on_options(value:bool)->void:
 	if !value && !MenuEvent.Paused:
@@ -31,3 +32,15 @@ func retranslate()->void:
 	find_node("NewGame").text = tr("NEW_GAME")
 	find_node("Options").text = tr("OPTIONS")
 	find_node("Exit").text = tr("EXIT")
+
+
+func _on_Leaderboard_pressed():
+	Game.emit_signal("ChangeScene", "res://Leaderboard/Leaderboard.tscn")
+
+
+func _on_Login_pressed():
+	Game.emit_signal("ChangeScene", "res://Auth/Login.tscn")
+
+
+func _on_Register_pressed():
+	Game.emit_signal("ChangeScene", "res://Auth/Register.tscn")
