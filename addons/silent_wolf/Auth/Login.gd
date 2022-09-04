@@ -1,4 +1,4 @@
-extends ScrollContainer
+extends Panel
 
 const SWLogger = preload("../utils/SWLogger.gd")
 
@@ -10,15 +10,14 @@ func _ready():
 func _on_LoginButton_pressed():
 	var username = $"FormContainer/UsernameContainer/Username".text
 	var password = $"FormContainer/PasswordContainer/Password".text
-	var remember_me = $"FormContainer/RememberMeCheckBox".is_pressed()
-	SWLogger.debug("Login form submitted, remember_me: " + str(remember_me))
-	SilentWolf.Auth.login_player(username, password, remember_me)
+	SWLogger.debug("Login form submitted")
+	SilentWolf.Auth.login_player(username, password)
 	show_processing_label()
 	
 func _on_login_succeeded():
 	var scene_name = SilentWolf.auth_config.redirect_to_scene
 	SWLogger.info("logged in as: " + str(SilentWolf.Auth.logged_in_player))
-	get_tree().change_scene(scene_name)
+	Game.emit_signal("ChangeScene",scene_name)
 	
 func _on_login_failed(error):
 	hide_processing_label()
@@ -27,7 +26,7 @@ func _on_login_failed(error):
 	$"FormContainer/ErrorMessage".show()
 
 func _on_BackButton_pressed():
-	get_tree().change_scene(SilentWolf.auth_config.redirect_to_scene)
+	Game.emit_signal("ChangeScene",SilentWolf.auth_config.redirect_to_scene)
 	
 func show_processing_label():
 	$"FormContainer/ProcessingLabel".show()
@@ -38,4 +37,4 @@ func hide_processing_label():
 
 
 func _on_LinkButton_pressed():
-	get_tree().change_scene(SilentWolf.auth_config.reset_password_scene)
+	Game.emit_signal("ChangeScene",SilentWolf.auth_config.reset_password_scene)

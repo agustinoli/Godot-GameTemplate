@@ -84,4 +84,4 @@ func hide_message():
 func _on_CloseButton_pressed():
 	var scene_name = SilentWolf.scores_config.open_scene_on_close
 	print("scene_name: " + str(scene_name))
-	get_tree().change_scene(scene_name)
+	Game.emit_signal("ChangeScene",scene_name)

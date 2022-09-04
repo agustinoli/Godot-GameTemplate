@@ -1,4 +1,4 @@
-extends ScrollContainer
+extends Panel
 
 const SWLogger = preload("../utils/SWLogger.gd")
 
@@ -15,7 +15,7 @@ func _on_RegisterButton_pressed():
 	show_processing_label()
 	
 func _on_registration_succeeded():
-	#get_tree().change_scene("res://addons/silent_wolf/Auth/Login.tscn")
+	#Game.emit_signal("ChangeScene","res://addons/silent_wolf/Auth/Login.tscn")
 	# redirect to configured scene (user is logged in after registration)
 	var scene_name = SilentWolf.auth_config.redirect_to_scene
 	# if doing email verification, open scene to confirm email address
@@ -24,7 +24,7 @@ func _on_registration_succeeded():
 		scene_name = SilentWolf.auth_config.email_confirmation_scene
 	else:
 		SWLogger.info("registration succeeded, logged in player: " + str(SilentWolf.Auth.logged_in_player))
-	get_tree().change_scene(scene_name)
+	Game.emit_signal("ChangeScene",scene_name)
 	
 func _on_registration_failed(error):
 	hide_processing_label()

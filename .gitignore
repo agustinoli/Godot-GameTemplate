@@ -8,7 +8,7 @@ debug.log
 *.translation
 
 #environmental variables, we skip the dot because godot doesn't export those files
-env
+.env
 
 # Mono-specific ignores
 .mono/

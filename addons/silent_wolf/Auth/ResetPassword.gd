@@ -18,7 +18,7 @@ func _ready():
 		login_scene = SilentWolf.Auth.login_scene
 
 func _on_BackButton_pressed():
-	get_tree().change_scene(login_scene)
+	Game.emit_signal("ChangeScene",login_scene)
 
 
 func _on_PlayerNameSubmitButton_pressed():
@@ -60,4 +60,4 @@ func _on_reset_failed(error):
 
 
 func _on_CloseButton_pressed():
-	get_tree().change_scene(login_scene)
+	Game.emit_signal("ChangeScene",login_scene)
