@@ -1,0 +1,21 @@
+{
+	"color": "#ff050c75",
+	"description": "Mauricio Goldfarb, conocido por su seudónimo Mauro Viale (Buenos Aires, 28 de agosto de 1947-ib., 11 de abril de 2021),1​ fue un presentador de televisión, periodista y locutor argentino. Desarrolló su carrera en diferentes medios, adquiriendo celebridad en la televisión. Comenzó en la especialidad deportiva y más tarde se volcó al periodismo general y de espectáculos.",
+	"display_name": "Viale",
+	"display_name_bool": true,
+	"id": "viale.json",
+	"mirror_portraits": false,
+	"name": "Mauro Viale",
+	"nickname": "Mauricio Goldfarb",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/dialogicTest/Images/viale.png"
+		}
+	],
+	"scale": 100,
+	"theme": "default-theme.cfg"
+}

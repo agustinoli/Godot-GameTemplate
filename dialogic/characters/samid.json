@@ -1,0 +1,21 @@
+{
+	"color": "#ff460606",
+	"description": "José Alberto Samid (Buenos Aires, 9 de enero de 1948) es un empresario de la industria cárnica, político y ajedrecista argentino.",
+	"display_name": "Samid",
+	"display_name_bool": true,
+	"id": "samid.json",
+	"mirror_portraits": true,
+	"name": "Alberto Samid",
+	"nickname": "El rey de la carne",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": -40,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/dialogicTest/Images/samid.png"
+		}
+	],
+	"scale": 100,
+	"theme": "default-theme.cfg"
+}

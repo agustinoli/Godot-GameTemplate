@@ -1,0 +1,302 @@
+{
+	"events": [
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "samid.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "viale.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pague los impuestos"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Y usted a ver si sabe como se llama"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pero pague los impuestos"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A ver si sabe como se llama un dia"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Usted debe como 70 millones"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ojala que un dia sepa como se llama"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A ver una cosita mas"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No, deje, deje"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por favor no se vaya"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Seguro que va a ser para agredirme o para descalificarme como es su costumbre"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nooo, yo no hago eso!"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Siii, si usted lo ha hecho toda su vida"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No se anima a contestarme la ultima"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yo me animo a contestarle lo que usted quiera"
+		},
+		{
+			"event_id": "dialogic_025",
+			"extra": "",
+			"glossary_id": "",
+			"text": "",
+			"title": ""
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Usted avalo la bomba a la AMIA"
+		},
+		{
+			"choice": "No, no puede decir semejante barbaridad",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mire la verda, la verda, mire la verda"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Usted avalo la bomba a la AMIA"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "De la unica persona en el mundo,de que puedo esperar que diga semejante barbaridad, es de uste"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": ""
+		},
+		{
+			"choice": "Acercarse a Viale",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Uste no puede deci semejante barbarida"
+		},
+		{
+			"animation": "[No Animation]",
+			"animation_length": 3,
+			"animation_wait": false,
+			"change_mirror_portrait": false,
+			"change_position": true,
+			"change_z_index": false,
+			"character": "samid.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "(Don't change)",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 2,
+			"z_index": 0
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nos conocemos bien eh"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Noo, no puede decir eso"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nos conocemos bien"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Usted tiene que arrepentirse de lo que dijo"
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "NO, no me voy a arrepentir"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ""
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ""
+		},
+		{
+			"choice": "Retirarse por el otro lado",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Andate terrorista. Cagon."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Creo que debemos reflexionar sobre nuestras palabras ",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "viale.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Es verdad, me arrepiento de haber dicho eso. Lo quiero mucho Alberto"
+		},
+		{
+			"character": "samid.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yo tambien te quiero Mauricio. Dame un abrazo"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 2
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1662272418.json",
+		"name": "timeline-test"
+	}
+}
