@@ -31,8 +31,8 @@ func _on_Exit_pressed()->void:
 func retranslate()->void:
 	find_node("NewGame").text = tr("NEW_GAME")
 	find_node("Options").text = tr("OPTIONS")
+	find_node("Credits").text = tr("CREDITS")
 	find_node("Exit").text = tr("EXIT")
-
 
 func _on_Leaderboard_pressed():
 	Game.emit_signal("ChangeScene", "res://Leaderboard/Leaderboard.tscn")
@@ -44,3 +44,6 @@ func _on_Login_pressed():
 
 func _on_Register_pressed():
 	Game.emit_signal("ChangeScene", "res://Auth/Register.tscn")
+
+func _on_Credits_pressed():
+	Game.emit_signal("ChangeScene", "res://addons/GameTemplate/CreditsScreen/CreditsScreen.tscn")
