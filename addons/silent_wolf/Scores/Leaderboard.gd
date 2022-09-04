@@ -96,14 +96,14 @@ func add_item(player_name, score):
 
 func add_no_scores_message():
 	var item = $"Board/MessageContainer/TextMessage"
-	item.text = "No scores yet!"
+	item.text = "NO_SCORES_YET"
 	$"Board/MessageContainer".show()
 	item.margin_top = 135
 
 
 func add_loading_scores_message():
 	var item = $"Board/MessageContainer/TextMessage"
-	item.text = "Loading scores..."
+	item.text = "LOADING_SCORES"
 	$"Board/MessageContainer".show()
 	item.margin_top = 135
 
