@@ -174,4 +174,7 @@ custom_constants/separation = 1
 margin_right = 29.0
 text = "Back"
 
+[connection signal="item_selected" from="Panel/VBoxContainer/HBoxContainer/LeftPanel/VBoxContainer/HBoxContainer/DifficultySelect" to="." method="_on_DifficultySelect_item_selected"]
+[connection signal="toggled" from="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer/Blood" to="." method="_on_Blood_toggled"]
+[connection signal="toggled" from="Panel/VBoxContainer/HBoxContainer/RightPanel/VBoxContainer/HBoxContainer2/Pacific" to="." method="_on_Pacific_toggled"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_Back_pressed"]
