@@ -2,7 +2,7 @@ name: Build & Publish Game
 
 on:
   push:
-    branches: [main, silent-wolf]
+    branches: main
 
 jobs:
   export_game:
