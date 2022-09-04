@@ -37,7 +37,7 @@ margin_right = 588.0
 margin_bottom = 136.0
 theme = ExtResource( 2 )
 custom_fonts/font = ExtResource( 5 )
-text = "Leaderboard"
+text = "LEADERBOARD"
 
 [node name="MessageContainer" type="CenterContainer" parent="Board"]
 visible = false
